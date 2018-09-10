@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-print('Hello,Василь Петрович')
+print('Hello,Тетяна Дмитрівна')
