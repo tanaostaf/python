@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-f=input('Введіть ПІП: ')
+prizv = input ('Яке Ваше прізвище?: ')
+imia = input ('Яке Ваше імя?: ')
+pobat = input ('Як Вас побатькові ?: ')
 
-a=print('Привіт, '+f)
+a=print("Привіт, %s %s %s " %( prizv, imia, pobat))
+
+input('Press ENTER to exit')
 
