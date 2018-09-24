@@ -12,8 +12,11 @@ print ('Дискримінант: ',D)
 if D < 0:
      print ('Коренів немає!')
 elif D == 0:
-     x = -b/(2*a)
+     x1 = -b/(2*a)
      print ('Корені рівняння: ',x1)
+elif a == 0:
+     x1 = (-b)/c
+     print(x1)
 elif b == 0:
      x1 = math.sqrt(-c/a)
      x2 = -(math.sqrt(-c/a))
