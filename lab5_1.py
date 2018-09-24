@@ -3,7 +3,7 @@
 
 b = int ( input ("Введіть число: "))
 
-print(~(b & (b-1)))
+print(not (b & (b-1)))
 
 
 
