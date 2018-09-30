@@ -6,9 +6,8 @@ a = float(input ("a : "))
 b = float(input ("b : "))
 c = float(input ("c : "))
 
-if (a < b+c) or (b < a+c) or (c < a+b):
+if (a + b > c) and (a + c > b) and (b + c > a):
        print ('Трикутник існує')
 else:
        print ('Трикутник не існує')
-
-
+input ('Press ENTER to exit')
