@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 import random
 
-print("1")
-print("2")
-print("3")
+print("Камінь  (1)")
+print("Ножниці (2)")
+print("Папір   (3)")
 ab = int(input("Введіть свій вибір: "))
 
 ac = random.randrange(1, 3)
@@ -18,6 +18,10 @@ elif ac == ab:
   print(" Нічия ")
 else:
   print("Ви зробили щось неправильно. Спробуйте ще раз!)")
+input ('Press ENTER to exit')
+
+
+
 
 
 
