@@ -10,7 +10,11 @@ c = float(input ("c : "))
 D = (b**2)-4*a*c
 print ('Дискримінант: ',D)
 if D < 0:
-     print ('Коренів немає!')
+     d  = abs(D)	 
+     x1 = complex((-b/(2*a)),(math.sqrt(d)/(2*a)))
+     x2 = complex((-b/(2*a)),(-(math.sqrt(d)/(2*a))))
+     print(x1)
+     print(x2)	 
 elif D == 0:
      x1 = -b/(2*a)
      print ('Корені рівняння: ',x1)
@@ -38,4 +42,5 @@ else:
      print(x1)
      print(x2)
 
+input ('Press ENTER to exit')
 
