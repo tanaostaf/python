@@ -10,4 +10,5 @@ def palindrom(s):
 
 print(palindrom(s))
 
+input ('Press ENTER to exit')
 
