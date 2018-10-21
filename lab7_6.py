@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re 
+n = input('Vedit radok: ')
 
-s = input('Vedit radok: ')
-Len = len(s)
-
-print (Len)
-print ('*'*Len,'*')
-print ('*'+s+'*')
-print ('*'*Len,'*')
-
-
-
+s_line = '*' + str(n) + '*'
+line = '*' * len(s_line)
+ 
+print(line)
+print(s_line)
+print(line)
+input ('Press ENTER to exit')
