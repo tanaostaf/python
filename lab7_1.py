@@ -10,6 +10,6 @@ elif k < 0:
    d = len(s) + k 
    print (s[d:]+ s[:d])
 
-
+input ('Press ENTER to exit')
 
 
