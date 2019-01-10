@@ -29,7 +29,7 @@ while True:
             break
 
         if response == 'Котра година ?':
-            client_socket.send(datetime.datetime.fromtimestamp(time.time()).strftime('Поточний година: %Y-%m-%d '
+            client_socket.send(datetime.datetime.fromtimestamp(time.time()).strftime('Поточна година: %Y-%m-%d '
                                                                                      '%H:%M:%S\n').encode('utf-8'))
         if response == 'Скільки місяців у році?':
             client_socket.send('Рік має 12 місяців.'.encode('utf-8'))
