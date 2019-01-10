@@ -1,5 +1,4 @@
 #! /usr/bin/python3
-# -*- coding: utf-8 -*-
 
 import socket
 import time
@@ -13,27 +12,27 @@ server_socket.listen(5)
 print('the server is waiting for connection')
 while True:
     client_socket, addr = server_socket.accept()
-    print("Отримано з'єднання від {}".format(addr))
+    print('Got a connection from {}'.format(addr))
 
-    client_socket.send('Як тебе звати ?'.encode('utf-8'))
+    client_socket.send('What is your name?'.encode('utf-8'))
     client_answer = client_socket.recv(1024)
     print(client_answer.decode('utf-8'))
-    client_socket.send((('Привіт, ' + client_answer.decode('utf-8')) + '\n').encode('utf-8'))
+    client_socket.send((('Hello, ' + client_answer.decode('utf-8')) + '\n').encode('utf-8'))
     while True:
-        client_socket.send("Що ти хочеш мене спитати?".encode('utf-8'))
+        client_socket.send("What do you want?".encode('utf-8'))
         client_answer = client_socket.recv(1024)
         response = client_answer.decode('utf-8')
 
-        if response == 'Вихід.':
+        if response == 'Exit.':
             client_socket.close()
             break
 
-        if response == 'Котра година ?':
-            client_socket.send(datetime.datetime.fromtimestamp(time.time()).strftime('Поточна година: %Y-%m-%d '
+        if response == 'What time is it?':
+            client_socket.send(datetime.datetime.fromtimestamp(time.time()).strftime('Potochnyy chas servera: %Y-%m-%d '
                                                                                      '%H:%M:%S\n').encode('utf-8'))
-        if response == 'Скільки місяців у році?':
-            client_socket.send('Рік має 12 місяців.'.encode('utf-8'))
+        if response == 'Skilky misyatsiv u rotsi?':
+            client_socket.send('U rotsi 12 misyatsiv.'.encode('utf-8'))
 
-        if response == 'Скільки днів у році?':
-            client_socket.send('У році є 365 днів.'.encode('utf-8'))
-    print('Клієнт відключений')
+        if response == 'Skilky dniv u rotsi?':
+            client_socket.send('U rotsi 36 dniv.'.encode('utf-8'))
+    print('Client disconected')
