@@ -34,5 +34,5 @@ while True:
             client_socket.send('U rotsi 12 misyatsiv.'.encode('utf-8'))
 
         if response == 'Skilky dniv u rotsi?':
-            client_socket.send('U rotsi 36 dniv.'.encode('utf-8'))
+            client_socket.send('U rotsi 365 dniv.'.encode('utf-8'))
     print('Client disconected')
